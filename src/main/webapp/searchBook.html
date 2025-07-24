@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Book</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f9f9f9;
+            padding: 40px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ccc;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 12px 0;
+            border-radius: 4px;
+            border: 1px solid #aaa;
+        }
+        input[type="submit"] {
+            background: #008CBA;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background: #007B9E;
+        }
+    </style>
+</head>
+<body>
+    <h2>Search Book</h2>
+    <form action="SearchBookServlet" method="get">
+        <label for="query">Enter title or author name:</label><br>
+        <input type="text" id="query" name="query" required><br><br>
+        <input type="submit" value="Search">
+    </form>
+    <br>
+    <a href="dashboard.jsp">⬅ Back to Dashboard</a>
+</body>
+</html>
